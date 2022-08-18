@@ -1,0 +1,26 @@
+header {
+    background-color: rgb(90, 155, 200);
+    padding: 20px 20px;
+    border-radius: 50px;
+}
+
+header nav {
+
+
+}
+
+header nav ul, li, a {
+    text-decoration: none;
+}
+
+
+
+main {
+    padding: 20px 20px;
+}
+
+h1 {
+    color: lightslategray;
+}
+
+img {}

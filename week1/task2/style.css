@@ -1,0 +1,20 @@
+body {
+    
+}
+
+.main {
+    padding: 100px;
+    background-color: goldenrod;
+    margin: 30px;
+}
+
+/* insert comments using mac shortcut! control shift A.*/
+
+h2 {
+    font-size: 26px;
+    color: darkblue;
+}
+
+h3 {
+    color: skyblue;
+}
