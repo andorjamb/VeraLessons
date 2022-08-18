@@ -1,4 +1,15 @@
+
+
+/* universal selector*/
+
+*{margin: 0px;
+    
+    box-sizing: border-box;
+}
+
+
 /* header */
+
 
 header {
     background-color: rgb(71, 83, 89);
@@ -22,6 +33,17 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 22px;
 line-height: 40px;
 text-align: right;
+display: inline-block;
+}
+
+ul li a {
+    padding: 20px;
+    display: block;
+
+}
+
+ul li a:hover {
+    color: black;
 }
 /* alternative way
 ul{
@@ -37,6 +59,10 @@ main {
     padding: 20px 20px;
     background-color: whitesmoke;
    
+}
+
+section {
+    padding: 30px;
 }
 
 h1 {
@@ -76,5 +102,39 @@ tr:hover {
 /* boxes page */
 
 #boxes {
-    
+    background-image: url("https://images.pexels.com/photos/12809081/pexels-photo-12809081.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") no-repeat fixed center cover;
+}
+
+.box {
+    display: inline-block;
+    margin: 32px;
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    border: 5px solid magenta;
+    background-color: brown;
+}
+.box2 {
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 80%;
+    background-color: blueviolet;
+    border-color:rgb(176, 146, 163) teal;
+}
+.box3 {
+    background-image: url("https://images.pexels.com/photos/13095904/pexels-photo-13095904.jpeg");
+    background-size: 200px 200px;
+}
+.box4 {
+    border-style: solid;
+    border-width: 6px;
+    border-color:chartreuse chocolate coral cadetblue;
+    background-color: darksalmon;
+    border-radius: 20px 80px;
+}
+.box5 {
+    background-color: skyblue;
+    border: 4px dotted orange;
 }
