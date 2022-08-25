@@ -1,0 +1,26 @@
+body {
+    padding: 60px 60px;
+    background-color: blanchedalmond;
+}
+
+
+table,
+td {
+    border: 2px solid coral;
+    border-collapse: collapse;
+    padding: 15px;
+    background-color: azure;
+}
+
+table {
+    margin: 10px;
+}
+
+thead{
+    background-color: bisque;
+    font-weight: bold;
+}
+
+td {
+    width: 300px;
+}

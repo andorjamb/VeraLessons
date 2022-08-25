@@ -1,9 +1,7 @@
-
-
 /* universal selector*/
 
-*{margin: 0px;
-    
+* {
+    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -14,26 +12,28 @@
 header {
     background-color: rgb(71, 83, 89);
 
-    
+
 }
 
 header nav {
-background-color: rgb(146, 165, 176);
-margin: 10px 10px;
+    background-color: rgb(146, 165, 176);
+    margin: 10px 10px;
     padding: 20px 20px;
     border-radius: 50px;
 
 }
 
-header nav ul, li, a {
-text-decoration: none;
-list-style: none;
-color: rgb(221, 232, 237);
-font-family: Arial, Helvetica, sans-serif;
-font-size: 22px;
-line-height: 40px;
-text-align: right;
-display: inline-block;
+header nav ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(221, 232, 237);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: right;
+    display: inline-block;
 }
 
 ul li a {
@@ -45,6 +45,7 @@ ul li a {
 ul li a:hover {
     color: black;
 }
+
 /* alternative way
 ul{
     list-style-type: none;
@@ -58,7 +59,7 @@ ul{
 main {
     padding: 20px 20px;
     background-color: whitesmoke;
-   
+
 }
 
 section {
@@ -75,29 +76,6 @@ img {
     height: 600px;
 }
 
-table{
-    border-bottom: 1px solid;
-   
-    
-}
-
-th, td {
-    height: 50px;
-    width: auto;
-    text-align: left;
-    padding: 15px;
-    border-bottom: 1px solid black;
-
-}
-
-tr {
-
-}
-
-tr:hover {
-    background-color: pink;
-
-}
 
 /* boxes page */
 
@@ -116,25 +94,63 @@ tr:hover {
     border: 5px solid magenta;
     background-color: brown;
 }
+
 .box2 {
     border-width: 10px;
     border-style: solid;
     border-radius: 80%;
     background-color: blueviolet;
-    border-color:rgb(176, 146, 163) teal;
+    border-color: rgb(176, 146, 163) teal;
 }
+
 .box3 {
     background-image: url("https://images.pexels.com/photos/13095904/pexels-photo-13095904.jpeg");
     background-size: 200px 200px;
 }
+
 .box4 {
     border-style: solid;
     border-width: 6px;
-    border-color:chartreuse chocolate coral cadetblue;
+    border-color: chartreuse chocolate coral cadetblue;
     background-color: darksalmon;
     border-radius: 20px 80px;
 }
+
 .box5 {
     background-color: skyblue;
     border: 4px dotted orange;
+}
+
+/* Table */
+table {
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+
+
+}
+
+th,
+td {
+    height: 50px;
+    width: 200px;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid black;
+
+}
+
+
+tbody tr:hover {
+    background-color: pink;
+
+}
+
+
+th {
+    /* table headings */
+    color: blue;
+}
+
+thead {
+    font-weight: bold;
 }
