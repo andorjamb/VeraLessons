@@ -3,6 +3,10 @@ body {
     background-color: blanchedalmond;
 }
 
+h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 
 table,
 td {
@@ -23,4 +27,10 @@ thead{
 
 td {
     width: 300px;
+}
+
+.center {
+    text-align: center;
+    background-color:cadetblue;
+    font-weight: 800;
 }
