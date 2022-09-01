@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    height: calc(1/8vh);
+}
+
+main {
+    display: flex;
+
+
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 80%vh;
+}
+
+footer {
+    background-color: brown;
+    display: flex;
+    flex: 1;
+    height: calc(1vh/8vh);
+}
+
+
+
+
+nav {
+    flex: 1;
+    background-color: lavender;
+    flex-direction: row;
+
+}
+
+
+
+nav ul {
+
+    flex: 33%;
+}
+
+
+ul {
+    list-style-type: none;
+    flex: 1;
+    flex-direction: row;
+
+}
+
+
+
+.pm {
+    border: 3px solid white;
+}
+
+.site-title.pm {
+    background-color: rgb(225, 245, 71);
+    flex: 1;
+    height: calc(1/8vh);
+}
+
+.section-post-container {}
+
+.post-meta.pm {
+    background-color: aquamarine;
+}
+
+.main-content-container {
+    background-color: rgb(213, 227, 236);
+}
+
+.main-content.pm {}
+
+.main-content-img.pm {
+    background-color: rgb(225, 245, 71);
+}
+
+.side-bar.pm {
+    background-color: rgb(148, 119, 87);
+
+}
+
+.ads.pm {
+    background-color: green;
+}
+
+.other-stuff.pm {
+    background-color: blueviolet;
+}
+
+
+
+/*8 rows::after6 columns*/
