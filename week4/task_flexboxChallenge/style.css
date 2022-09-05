@@ -4,96 +4,131 @@
     box-sizing: border-box;
 }
 
+/*parent*/
 header {
     display: flex;
-    height: calc(1/8vh);
+    flex-direction: row;
 }
 
-main {
-    display: flex;
-
-
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    height: 80%vh;
-}
-
-footer {
-    background-color: brown;
-    display: flex;
-    flex: 1;
-    height: calc(1vh/8vh);
-}
-
-
-
-
-nav {
-    flex: 1;
-    background-color: lavender;
+/*Header children */
+.site-title.pm {
+    background-color: rgb(255, 245, 84);
+    flex: 50%;
     flex-direction: row;
 
 }
 
+nav {
+    background-color: rgb(245, 194, 204);
+    justify-content: space-between;
+    flex: 50%;
+    flex-wrap: nowrap;
+    flex-direction: row;
 
 
-nav ul {
+}
 
+nav ul {}
+
+nav li {
+    height: 100%;
     flex: 33%;
 }
 
-
 ul {
     list-style-type: none;
+
+
+
+}
+
+/*parent of all main content*/
+main {
+    display: flex;
+    width: 100%;
+
+}
+
+
+
+/* main direct children */
+
+.post-title {
+    /*sibling to section-post-container*/
+    display: flex;
+    background-color: rgb(112, 136, 149);
+    width: 100%;
+
+}
+
+.section-post-container {
+    display: flex;
+}
+
+
+/*children to section-post-container*/
+
+.post-meta.pm {
+    background-color: rgb(166, 236, 155);
+    flex: 20%;
+    height: 300px;
+}
+
+.main-content-container {
+    background-color: rgb(213, 227, 236);
+    flex: 2;
+
+}
+
+/*children of main-content-container*/
+
+.main-content.pm {
+    background-color: rgb(211, 211, 211);
+    flex: 50%;
+
+
+}
+
+.main-content-img.pm {
+    background-color: rgb(255, 254, 84);
+
+}
+
+/*parent*/
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+/* aside children: */
+
+.side-bar.pm {
+    background-color: rgb(240, 168, 59);
     flex: 1;
-    flex-direction: row;
+
+}
+
+.ads.pm {
+    background-color: rgb(53, 121, 33);
+    flex: 1;
+}
+
+.other-stuff.pm {
+    background-color: rgb(224, 136, 233);
+    flex: 1;
+}
+
+
+footer {
+    background-color: rgb(153, 53, 48);
+    display: block;
+    height: 70px;
 
 }
 
 
 
 .pm {
-    border: 3px solid white;
+    border: 1px solid white;
 }
-
-.site-title.pm {
-    background-color: rgb(225, 245, 71);
-    flex: 1;
-    height: calc(1/8vh);
-}
-
-.section-post-container {}
-
-.post-meta.pm {
-    background-color: aquamarine;
-}
-
-.main-content-container {
-    background-color: rgb(213, 227, 236);
-}
-
-.main-content.pm {}
-
-.main-content-img.pm {
-    background-color: rgb(225, 245, 71);
-}
-
-.side-bar.pm {
-    background-color: rgb(148, 119, 87);
-
-}
-
-.ads.pm {
-    background-color: green;
-}
-
-.other-stuff.pm {
-    background-color: blueviolet;
-}
-
-
-
-/*8 rows::after6 columns*/
