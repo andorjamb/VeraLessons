@@ -64,3 +64,12 @@ section {
     position: sticky;
     top: 100px;
 }
+
+.material-icons {
+    
+    color: darkgray;
+    font-size: 48px;
+}
+
+.icons{background-color: whitesmoke;}
+
