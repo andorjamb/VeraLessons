@@ -13,33 +13,31 @@ header {
 /*Header children */
 .site-title.pm {
     background-color: rgb(255, 245, 84);
-    flex: 50%;
+    flex: 1;  /*equivalent to 50%, when it is shared with nav sibling, also of flex 1*/
     flex-direction: row;
 
 }
 
 nav {
     background-color: rgb(245, 194, 204);
-    justify-content: space-between;
-    flex: 50%;
-    flex-wrap: nowrap;
-    flex-direction: row;
+   
+    flex: 1;
+  
 
 
 }
 
-nav ul {}
+nav ul {
+    display: flex;
+}
 
 nav li {
-    height: 100%;
-    flex: 33%;
+    flex:1; /*equivalent to 33% because there are 3 of them*/
+    
 }
 
 ul {
     list-style-type: none;
-
-
-
 }
 
 /*parent of all main content*/
@@ -49,20 +47,22 @@ main {
 
 }
 
-
+section {   /*Huom!*/
+    flex: 3;
+}
 
 /* main direct children */
 
 .post-title {
     /*sibling to section-post-container*/
-    display: flex;
-    background-color: rgb(112, 136, 149);
+background-color: rgb(112, 136, 149);
     width: 100%;
 
 }
 
 .section-post-container {
     display: flex;
+
 }
 
 
@@ -70,27 +70,29 @@ main {
 
 .post-meta.pm {
     background-color: rgb(166, 236, 155);
-    flex: 20%;
+    flex: 1;
     height: 300px;
 }
 
 .main-content-container {
     background-color: rgb(213, 227, 236);
-    flex: 2;
-
+    flex: 3;
+flex-direction:column;
 }
 
 /*children of main-content-container*/
 
 .main-content.pm {
+    display: flex;
     background-color: rgb(211, 211, 211);
-    flex: 50%;
+    flex: 1;
 
 
 }
 
 .main-content-img.pm {
     background-color: rgb(255, 254, 84);
+    flex: 2;
 
 }
 
@@ -98,7 +100,8 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 1;
+ 
 }
 
 /* aside children: */
@@ -131,4 +134,5 @@ footer {
 
 .pm {
     border: 1px solid white;
+    min-height: 100px;    /* set minimum height for all elements of the class*/
 }

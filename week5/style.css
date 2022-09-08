@@ -1,0 +1,66 @@
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+section {
+    background: #bebebe;
+    height: 400px;
+    width: 100vw;
+    padding: 1rem;
+    margin: 1rem;
+    z-index: 1;
+}
+
+#D {
+    height: 2000px;
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    background: indigo;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+   
+
+}
+
+#A .item:nthchild(2){
+    position: relative;
+    z-index: 3;
+    
+}
+
+#A .item:nth-child(3) {
+    position: relative;
+    background-color: blue;
+    top: -100px; /* moves the element relative to its normally-occupied position*/
+    left: 100px;
+    z-index: 2;
+}
+
+#B .item {
+    position: fixed;
+   right: 0;
+}
+
+
+#C .item {
+    background-color: chartreuse;
+    color: indigo;
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+}
+
+#D .item{
+    position: sticky;
+    top: 100px;
+}
