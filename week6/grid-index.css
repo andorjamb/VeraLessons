@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item {
+    min-height: 50px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-gap: 0.3rem;
+    grid-template-areas:
+        "Stitle Stitle Stitle nav nav nav"
+        "Ptitle Ptitle Ptitle Ptitle Ptitle sidebar"
+        "meta content content content content sidebar"
+        "meta content content content content ads"
+        "meta image image image image ads"
+        "meta image image image image stuff"
+        "meta image image image image stuff"
+        "footer footer footer footer footer footer";
+    grid-auto-rows: 1fr;
+    /*important property, distributes content vertically*/
+}
+
+.Stitle {
+    grid-area: Stitle;
+    background: chocolate;
+
+}
+
+.nav {
+    display: grid;
+    grid-area: nav;
+    background: pink;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "nav nav nav";
+
+}
+
+.Ptitle {
+    grid-area: Ptitle;
+    background: rgb(124, 164, 230);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: brown;
+}
+
+
+.meta {
+    grid-area: meta;
+    background: greenyellow;
+}
+
+
+.content {
+    grid-area: content;
+    background: gray;
+}
+
+.ads {
+    grid-area: ads;
+    background-color: green;
+
+}
+
+.image {
+    grid-area: image;
+    background-color: yellow;
+    ;
+}
+
+.stuff {
+    grid-area: stuff;
+    background-color: purple;
+}
+
+.footer {
+    grid-area: footer;
+    background: brown;
+}
