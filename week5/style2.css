@@ -1,0 +1,56 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin: 2rem 0;
+}
+
+
+container {
+    width: 1200px;
+}
+
+#skills{
+    min-height: 500px;
+}
+
+.skills_group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+
+.skill {
+    background-color: wheat;
+    padding: 2rem;
+    border: 1px solid darkgray;
+    height: 200px;
+}
+
+/*webkit pseudo classes*/
+progress [value]::-webkit-progress-bar {
+    background-color: #eee;
+
+}
+
+progress [value] {
+height: 1.5rem;
+    background: transparent;
+    -webkit-appearance: none; 
+} 
+progress [value]::-webkit-progress-value {
+    background: coral;
+    border-radius: 5px;
+    background-size: 35px 20px;
+}
+
+i{
+    font-size: 48px;
+}
+
