@@ -9,14 +9,16 @@ body {
 }
 
 .item {
-    min-height: 50px;
+    min-height: 80px;
+
 }
 
 
 .grid-container {
     display: grid;
-    grid-gap: 0.3rem;
-    grid-template-areas:
+
+
+    /* grid-template-areas:
         "Stitle Stitle Stitle nav nav nav"
         "Ptitle Ptitle Ptitle Ptitle Ptitle sidebar"
         "meta content content content content sidebar"
@@ -25,66 +27,115 @@ body {
         "meta image image image image stuff"
         "meta image image image image stuff"
         "footer footer footer footer footer footer";
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 1fr; */
     /*important property, distributes content vertically*/
 }
 
-.Stitle {
-    grid-area: Stitle;
-    background: chocolate;
+/*HEADER*/
 
+.header-container {
+    display: grid;
+    grid-column: 1 / span 6;
+    grid-row: 1 / 1;
+    grid-template-columns: repeat(6, 50px);
+
+
+}
+
+.Stitle {
+    /*  grid-area: Stitle; */
+    background: chocolate;
+    grid-column: 1 / span 3;
 }
 
 .nav {
-    display: grid;
-    grid-area: nav;
-    background: pink;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-        "nav nav nav";
 
+    /*  grid-area: nav; */
+    background: pink;
+
+}
+
+/*MAIN*/
+
+.main-container {
+    display: grid;
+    border: 1px solid red;
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 4;
+    grid-template-areas:
+        "Ptitle Ptitle Ptitle"
+        "meta content content"
+        ""
 }
 
 .Ptitle {
-    grid-area: Ptitle;
+    /*   grid-area: Ptitle; */
     background: rgb(124, 164, 230);
-}
+    grid-column: 1 / span 5;
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: brown;
 }
 
 
 .meta {
-    grid-area: meta;
+    /* grid-area: meta; */
     background: greenyellow;
+    grid-column: 1 / 1;
+    grid-row: 3 / span 6;
 }
 
 
 .content {
-    grid-area: content;
+    /*  grid-area: content; */
     background: gray;
-}
-
-.ads {
-    grid-area: ads;
-    background-color: green;
-
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 2;
 }
 
 .image {
-    grid-area: image;
+    /* grid-area: image; */
     background-color: yellow;
-    ;
+    grid-column: 2 / span 3;
+    grid-row: 5 / span 2;
 }
+
+/*SIDEBAR*/
+
+.sidebar-container {
+    display: grid;
+    grid-column: 5/ span 2;
+    grid-row: 2 / span 5;
+    border: none;
+}
+
+.ads {
+    /*  grid-area: ads; */
+    background-color: green;
+    grid-column: 6 / span 1;
+    grid-row: 5 / span 2;
+
+}
+
+.sidebar {
+    /*  grid-area: sidebar; */
+    background-color: brown;
+    grid-column: 6 / span 1;
+    grid-row: 2 / span 2;
+}
+
+
 
 .stuff {
-    grid-area: stuff;
+    /*  grid-area: stuff; */
     background-color: purple;
+    grid-column: 6 / span 1;
+    grid-row: 7 / span 2;
 }
 
+/*FOOTER*/
+
 .footer {
-    grid-area: footer;
+    /* grid-area: footer; */
     background: brown;
+    grid-column: 1 / span 6;
+    grid-row: 7 / span 1;
 }
