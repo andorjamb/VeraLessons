@@ -1,0 +1,91 @@
+:root {
+    --primary-color: rgb(41, 41, 73);
+    --secondary-color: rgb(70, 70, 166);
+    --neutral-color: ;
+    --light-color: rgb(196, 196, 239);
+    ;
+    --dark-color: rgb(5, 5, 40);
+    --font: white;
+    --hightlight-color: rgb(225, 105, 57);
+    --gradient: linear-gradient(to right top, pink, rgb(169, 67, 184), purple);
+}
+
+
+* {
+    margin: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    background: var(--gradient);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.item {
+    height: 250px;
+    width: 250px;
+    background: var(--primary-color);
+    color: var(--font);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 1px var(--light-color),
+        3px 3px 5px var(--dark-color);
+    transition: all 1s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: inset 0 0 200px var(--light-color);
+}
+
+button {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: var(--secondary-color);
+    box-shadow: 0 3px 10px var(--dark-color),
+        inset 0px 0px 5px var(--dark-color);
+    border: none;
+    transition: height 1s, width 1s;
+    color: var(--light-color);
+}
+
+button:hover {
+
+    height: 170px;
+    width: 170px;
+}
+
+.new-item {
+    background-image: radial-gradient(red, orange);
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    width: 150px;
+    background: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px var(--dark-color);
+
+}
+
+.circle {}
+
+.menu-item {}
