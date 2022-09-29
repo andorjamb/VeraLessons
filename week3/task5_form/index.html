@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Static Form</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -14,14 +20,19 @@
         <h2>Sign Up</h2>
         <p>It's free and only takes a minute</p>
         <form>
+          <p class="label">First name</p>
           <input type="text" id="firstName" />
+          <p class="label">Last name</p>
           <input type="text" id="lastName" />
+          <p class="label">Email</p>
           <input type="email" id="email" />
+          <p class="label">Password</p>
           <input type="password" id="password" />
+          <p class="label">Confirm password</p>
           <input type="password" id="confirmPassword" />
           <input type="submit" id="submitBtn" value="Sign up" />
         </form>
-        <p>
+        <p class="disclaimer">
           My clicking the Sign Up button, you agree to our
           <a>Terms & Conditions</a> and <a>Privacy Policy</a>
         </p>

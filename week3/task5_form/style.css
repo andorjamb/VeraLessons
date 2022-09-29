@@ -1,16 +1,17 @@
 body {
-  background-color: rgb(51, 153, 102);
-  font-family: Arial;
+  background-color: rgb(47, 140, 98);
+  font-family: "Raleway";
   color: white;
   text-align: center;
 }
 
-main {
-  align-items: center;
+h2 {
+  font-weight: 900;
+  padding-top: 0;
 }
 
-p {
-  display: block;
+main {
+  align-items: center;
 }
 
 section {
@@ -18,19 +19,34 @@ section {
   width: 270px;
   background-color: #ffffff;
   border-radius: 7px;
-  padding: 1rem;
+  padding: 1em;
   color: black;
   text-align: center;
 }
 
+section p {
+  font-size: 1rem;
+}
+
+section .label {
+  font-size: 0.6rem;
+  text-align: left;
+  margin-left: 1rem;
+  padding: 0;
+  margin-bottom: 0;
+}
+section .disclaimer {
+  font-size: 0.7rem;
+}
 input {
   display: block;
+  margin: auto;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  width: 220px;
   padding: 0.5rem;
   border-radius: 7px;
-  border: 1px solid black;
-  margin: auto;
-  margin-top: 1rem;
-  width: 220px;
+  border: 1px solid lightgray;
 }
 
 #submitBtn {
