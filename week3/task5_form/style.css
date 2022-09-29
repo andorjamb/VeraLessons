@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(51, 153, 102);
+  font-family: Arial;
+  color: white;
+  text-align: center;
+}
+
+main {
+  align-items: center;
+}
+
+p {
+  display: block;
+}
+
+section {
+  margin: auto;
+  width: 270px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 1rem;
+  color: black;
+  text-align: center;
+}
+
+input {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 7px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 1rem;
+  width: 220px;
+}
+
+#submitBtn {
+  background-color: rgb(255, 153, 0);
+  color: white;
+  width: 190px;
+  border: none;
+  text-transform: uppercase;
+}
+
+a {
+  color: rgb(255, 153, 0);
+}
